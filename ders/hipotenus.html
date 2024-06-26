@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    dik_kenar1 : <input type="text" , id="kenar1" /> dik_kenar2 :
+    <input type="text" , id="kenar2" />
+    <button onclick="hesapla()">Hesapla</button>
+    <p id="sonuc" style="color: brown"></p>
+    <script>
+      function hesapla() {
+        var dik_kenar1 = Number(document.getElementById("kenar1").value);
+        var dik_kenar2 = Number(document.getElementById("kenar2").value);
+        var hipo = Math.sqrt(dik_kenar1 * dik_kenar1 + dik_kenar2 * dik_kenar2);
+        document.getElementById("sonuc").innerHTML = "hipotenüs:" + hipo;
+      }
+    </script>
+  </body>
+</html>

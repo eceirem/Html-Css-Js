@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .adds {
+        color: brown;
+      }
+      .subs {
+        color: violet;
+      }
+      .mult {
+        color: black;
+      }
+      .divi {
+        color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    1. Sayı: <input type="text" , id="num1" placeholder="1.sayıyı giriniz" /> 2.
+    Sayı: <input type="text" id="num2" placeholder="2. sayıyı giriniz" />
+    <br />
+    <br />
+    <button onclick="add()">Topla</button>
+    <button onclick="sub()">Çıkart</button>
+    <button onclick="mul()">Çarp</button>
+    <button onclick="div()">Böl</button>
+    <br />
+    <p id="sonuc" class="adds"></p>
+    <p id="sonuc" class="subs"></p>
+    <p id="sonuc" class="mult"></p>
+    <p id="sonuc" class="divi"></p>
+    <script>
+      function add() {
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var add = num1 + num2;
+        document.getElementById("sonuc").innerHTML = add;
+      }
+
+      function sub() {
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var sub = num1 - num2;
+        document.getElementById("sonuc").innerHTML = sub;
+      }
+      function mul() {
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var mul = num1 * num2;
+        document.getElementById("sonuc").innerHTML = mul;
+      }
+      function div() {
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+
+        if (num2 != 0) {
+          var div = Math.round(num1 / num2);
+        } else {
+          alert("Payda 0 olamaz.");
+        }
+        document.getElementById("sonuc").innerHTML = div;
+      }
+    </script>
+  </body>
+</html>

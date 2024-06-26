@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    kısa kenar : <input type="text" id="kenar1" />
+    <br />
+    uzun kenar : <input type="text" id="kenar2" />
+    <br />
+    <button value="Hesapla" onclick="hesapla()">Hesapla</button>
+    <script>
+      function hesapla() {
+        var k1 = Number(document.getElementById("kenar1").value); //input alacağım nesne ile aynı id olmalı
+        k1 = Number(k1);
+        var k2 = Number(document.getElementById("kenar2").value);
+        k2 = Number(k2);
+        alert(2 * (k1 + k2));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      section {
+        background-color: darkblue;
+      }
+      .f20 {
+        font-size: 20px;
+      }
+      .f18 {
+        font-size: 18px;
+      }
+      body {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+
+      /* -------------------------------------- */
+      /* manuel bir şekilde elle başlıkların rengini ayarlayabilirim */
+      /* h1,
+      h2 {
+        color: bisque;
+      } */
+      /* ------------------------------------- */
+      /* id vererek de burada renkleri kodlayabilirim*/
+      #page-title {
+        font-size: 20px;
+        border: 2px solid red;
+      }
+      #page-subtitle {
+        font-size: 15px;
+        border: 2px solid pink;
+      }
+      /* -------------------------------------- */
+      /* class şeklinde de tanımlayabilirim. Artık yazacağım her metne bunu ekleyebilirim. */
+      .text-white {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title" class="text-white">Welcome To MovieApp</h1>
+        <p style="color: bisque">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ut?
+        </p>
+      </section>
+      <section>
+        <h2 id="page-subtitle" class="text-white">How It Works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

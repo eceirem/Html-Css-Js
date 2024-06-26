@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* id, class ve etiket ismine göre daha etkindir. Bir inline css en etkilisidir. */
+      /* id > class > etiket */
+      * {
+        background-color: black;
+      }
+      body {
+        font-size: 15px;
+      }
+      #page-title {
+        color: chocolate;
+      }
+      .text-yellow {
+        color: yellowgreen;
+      }
+      h1 {
+        color: red;
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 15px;
+      }
+      p {
+        color: red;
+      }
+      p {
+        border: 3px solid beige;
+      }
+      em {
+        border: inherit;
+      }
+      em {
+        color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title" class="text-yellow" , style="color: violet">
+          Welcome To MovieApp
+        </h1>
+        <p style="color: bisque">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ut?
+        </p>
+      </section>
+      <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em>elit.</p>
+      <section>
+        <h2 id="page-subtitle" class="text-yellow">How It Works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" , id="num" , value="0" />
+    <br />
+    <br />
+    <button onclick="arttir()">Arttır</button>
+    <button onclick="azalt()">Azalt</button>
+    <button onclick="sifirla()">Sıfırla</button>
+    <script>
+      function arttir() {
+        var x = Number(document.getElementById("num").value);
+        x = x + 1;
+        document.getElementById("num").value = x;
+      }
+      function azalt() {
+        var x = Number(document.getElementById("num").value);
+        x = x - 1;
+        document.getElementById("num").value = x;
+      }
+      function sifirla() {
+        document.getElementById("num").value = 0;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+section {
+  background-color: #2e4c6d;
+  color: white;
+  text-align: center;
+}
+h1 {
+  color: #ffff;
+}
+h2 {
+  color: pink;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: aquamarine;
+}

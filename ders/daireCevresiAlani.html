@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    radius : <input type="text" id="radius" />
+    <button onclick="hesapla()">Hesapla</button>
+    <p id="sonuc"></p>
+    <p id="sonuc2"></p>
+    <script>
+      function hesapla() {
+        var r = Number(document.getElementById("radius").value);
+        var alan = 3 * r * r;
+        var cevre = 2 * 3 * r;
+        document.getElementById("sonuc").innerHTML = "Çevre:" + cevre;
+        document.getElementById("sonuc2").innerHTML = "Alan:" + alan;
+      }
+    </script>
+  </body>
+</html>

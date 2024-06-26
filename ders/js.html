@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="paragraf"></p>
+    <script language="javascript">
+      window.onload = function () {
+        alert("Dikkat kod bulundu"); //js ekrana mesaj bastırmak için kullanılan bir komuttur. İstenilen her yere konabilir. head body ya da html altında
+        document.getElementById("paragraf").innerHTML = "Merhaba Js";
+        console.log("konsola yazacak mı acaba?");
+      };
+    </script>
+    <script>
+      document.getElementById("paragraf").innerHTML = "Merhaba Js"; //id yi oluşturmadan bastıramayacağım için paragrafın yerini oluşturduktan sonra yaz. ya body'de altında ya da altta farklı bir yer de olabilir.
+      var x = 10; //  bütün değişkenler var komutu ile yapılıyor.
+      document.write("merhaba javascript");
+      var x = 10;
+      var y = 20;
+      var z = x + y;
+      var k;
+      console.log(x); // 10
+      console.log(y); // 20
+      console.log(z); // 30
+      console.log(k); // undefined
+    </script>
+    <button onclick="(document.write('Hello love'))">Buraya tıkla</button>
+  </body>
+</html>

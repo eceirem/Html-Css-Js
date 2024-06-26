@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<!--tr dediğimiz şey satır oluşturuyor.(table row)
+Bu satırı doldurmak için veri girmem lazım td (table data)th nin anlamıda tablo başlığı oluşturur(table header)
+rowspan satıları birleştiriyor
+colspan sütunları birleştiriyor-->
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="3"> Kişisel Bilgiler </th>
+
+        </tr>
+        <tr>
+        <th>İsim</th>
+        <th>Soyisim</th>
+        <th>Yaş</th>            
+        </tr>
+        <tr>
+            <!--<td rowspan="2">İsim</td>  bu şekilde yazarsak sol taraftan iki satırı da birleştiren bir tablo oluştururuz.--> 
+            <td>Ece İrem</td>
+            <td>Şişer</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Doğukan</td>
+            <td>Filiz</td>
+            <td>22</td>
+        </tr>
+    </table>
+</body>
+</html>

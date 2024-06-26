@@ -1,0 +1,64 @@
+<!-- kullanıcıdan bilgi almayı öğrendik ama server tarafından elde etmiyoruz backend kısmında halledeceğiz -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="surname">Soyad</label>
+        <input type="text" id="surname" />
+      </div>
+
+      <div>
+        <label for="intro">Kendini Anlat</label>
+        <textarea id="intro" cols="20" rows="10"></textarea>
+      </div>
+      <div>
+        <!-- tek bir tane seçmesini istiyorsam hepsine aynı name bilgisini vermem lazım -->
+        <p>En sevdiğin programlama dili nedir?</p>
+        <!-- Label ın for u ile id yi eşitlemeyince kelimenin üzerine bastığımda seçim yapamıyorum -->
+
+        <input type="radio" id="html" />
+        <label for="html">HTML</label>
+
+        <input type="radio" id="css" />
+        <label for="css">CSS</label>
+
+        <input type="radio" id="JS" />
+        <label for="JS">JavaScipt</label>
+      </div>
+      <!-- id'ler farklı olmalı checkbox ve radio arasında -->
+      <div>
+        <input type="checkbox" id="html2" />
+        <label for="html2">HTML</label>
+
+        <input type="checkbox" id="css2" />
+        <label for="css2">CSS</label>
+
+        <input type="checkbox" id="JS2" />
+        <label for="JS2">JavaScipt</label>
+      </div>
+      <div>
+        <label for="cities"></label>
+        <select id="cities">
+          <option value="06">Ankara</option>
+          <option value="34">İstanbul</option>
+        </select>
+      </div>
+      <div>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" />
+      </div>
+      <button type="submit">Kaydet</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
